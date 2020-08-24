@@ -1,0 +1,39 @@
+<!-- usando contador con cookie -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>    
+    <main class="container mt-3 border border-warning shadow-lg">
+
+        <!-- section de titulos -->
+        <section class="row">
+            <div id="respuesta" class="col-7 d-flex justify-content-end h3">Encuentre el numero:</div>
+            <div id="contador" class="col-5 d-flex justify-content-end h3"></div>
+            <!-- <p></p> -->
+        </section>
+
+        <section class="d-flex justify-content-center pt-3">
+            <form id="formulario" action="juego.php" method="POST">
+                <div class="form-group">
+                    <input placeholder="digite numero" class="form-control" type="text" name="txtNumero" id="txtNumero" required>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <input class="mr-1 col-5 btn btn-primary" type="submit" name="btnEnviar" value="Enviar" id="btnEn">
+                    <input class="mr-1 col-5 btn btn-success" type="button" name="btnCambiar" value="Reiniciar" id="btnRe">
+                </div>
+            </form>
+        </section>
+        <footer class="d-flex justify-content-end" id="ultimo">
+             
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="juego.js"></script>
+</body>
+</html>
